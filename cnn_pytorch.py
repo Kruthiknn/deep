@@ -56,8 +56,8 @@ for epoch in range(num_epochs):
         optimizer.zero_grad()
         running_loss+=loss.item()
             
-    print(f'epoch[{epoch+1/num_epochs}],loss:{running_loss/len(train_loader)}')
-    
+    print(f'epoch[{epoch+1/num_epochs}],loss:{running_loss/len(train_loader)} ')
+
 model.eval()
 correct=0.0
 total=0.0
